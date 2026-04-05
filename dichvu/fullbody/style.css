@@ -1,0 +1,135 @@
+:root {
+    --gold: #c5a059;
+    --cream: #f9f7f3;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    color: #333;
+}
+
+.serif-font {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.bg-cream {
+    background-color: var(--cream);
+}
+
+.border-gold {
+    border-color: var(--gold) !important;
+}
+
+.logo img {
+  height: 40px;
+}
+.nav-links .nav-link {
+  color: #333 !important;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links .nav-link:hover {
+  color: #c5a059 !important;
+}
+
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+.submenu {
+  min-width: 250px;
+  border-radius: 0;
+}
+
+.submenu .dropdown-item {
+  padding: 12px 20px;
+  color: #555;
+  font-size: 13px;
+  white-space: normal;
+}
+
+.submenu .dropdown-item:hover {
+  background: #fcfaf5;
+  color: #c5a059;
+}
+
+.language-picker {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--gold);
+    background-color: transparent;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23333'%3e%3cpath fill-rule='evenodd' d='M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z'/%3e%3c/svg%3e");
+}
+
+.section-title-line {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title-line::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: var(--gold);
+}
+
+/* Footer Links */
+footer a:hover {
+    color: var(--gold) !important;
+}
+
+.letter-spacing-2 {
+    letter-spacing: 2px;
+}
+.text-gold {
+    color: #d1ab6e !important; /* Màu vàng nhạt giống trong ảnh */
+}
+
+/* Tiêu đề Serif nghệ thuật */
+.serif-font {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Căn lề đều hai bên cho giống thiết kế */
+.text-justify {
+    text-align: justify;
+}
+
+/* Tùy chỉnh kích thước chữ cho đoạn văn */
+.method-item p {
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    color: #555 !important;
+}
+
+/* Tùy chỉnh tiêu đề chính */
+.display-4 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: #2c2c2c;
+}
+
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}

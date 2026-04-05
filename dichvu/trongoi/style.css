@@ -1,0 +1,114 @@
+/* Custom CSS */
+:root {
+    --gold: #c5a059;
+    --cream: #f9f7f3;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.serif-font {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.bg-cream {
+    background-color: var(--cream);
+}
+
+.logo img {
+  height: 40px;
+}
+.nav-links .nav-link {
+  color: #333 !important;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links .nav-link:hover {
+  color: #c5a059 !important;
+}
+
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+.submenu {
+  min-width: 250px;
+  border-radius: 0;
+}
+
+.submenu .dropdown-item {
+  padding: 12px 20px;
+  color: #555;
+  font-size: 13px;
+  white-space: normal;
+}
+
+.submenu .dropdown-item:hover {
+  background: #fcfaf5;
+  color: #c5a059;
+}
+
+.language-picker {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+.accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+    color: #c5a059 !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23333'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+.accordion-button {
+    border-radius: 0 !important;
+}
+
+.section-title-line {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title-line::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background-color: var(--gold);
+}
+
+/* Utilities */
+.letter-spacing-2 {
+    letter-spacing: 2px;
+}
+
+footer a:hover {
+    color: var(--gold) !important;
+}
+
+.language-picker {
+    cursor: pointer;
+    font-size: 14px;
+}

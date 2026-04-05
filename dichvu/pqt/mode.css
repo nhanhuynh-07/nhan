@@ -1,0 +1,128 @@
+:root {
+    --spa-color: #c4a47c; /* Màu vàng đồng của Lá Spa */
+}
+
+body {
+    padding-top: 90px;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Mulish', sans-serif;
+    color: #333;
+}
+@media (max-width: 991px) {
+    body {
+        padding-top: 70px;
+    }
+}
+
+.serif-font {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+    .bg-cream {
+    background-color: var(--cream);
+    }
+
+    .border-gold {
+    border-color: var(--gold) !important;
+    }
+
+    .logo img {
+    height: 40px;
+    }
+    .nav-links .nav-link {
+    color: #333 !important;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+    padding: 0.5rem 1rem;
+    }
+
+    .nav-links .nav-link:hover {
+    color: #c5a059 !important;
+    }
+
+    @media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    }
+    }
+
+    .submenu {
+    min-width: 250px;
+    border-radius: 0;
+    }
+
+    .submenu .dropdown-item {
+    padding: 12px 20px;
+    color: #555;
+    font-size: 13px;
+    white-space: normal;
+    }
+
+    .submenu .dropdown-item:hover {
+    background: #fcfaf5;
+    color: #c5a059;
+    }
+
+    .language-picker {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    }
+
+    .main-img-container {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+    }
+
+    .main-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+    }
+
+    .thumb-item {
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    height: 80px;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    }
+
+    .thumb-item:hover, .thumb-item.active {
+    opacity: 1;
+    border-color: var(--spa-color);
+    transform: translateY(-2px);
+    }
+
+    .spa-content {
+    padding-top: 20px;
+    }
+
+    .btn-spa {
+    background-color: var(--spa-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    }
+
+    .btn-spa:hover {
+    background-color: #a38965;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }

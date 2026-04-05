@@ -1,0 +1,160 @@
+/* Custom CSS */
+:root {
+    --gold: #c5a059;
+    --cream: #f9f7f3;
+    --dark-gold: #d9b36a;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    color: #333;
+    overflow-x: hidden; /* Đảm bảo không bị tràn ngang */
+}
+
+.serif-font {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.bg-cream {
+    background-color: var(--cream);
+}
+
+.bg-gold-themed {
+    background-color: var(--dark-gold);
+}
+
+/* Background Image cố định toàn trang */
+.bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.logo img {
+  height: 40px;
+}
+.nav-links .nav-link {
+  color: #333 !important;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links .nav-link:hover {
+  color: #c5a059 !important;
+}
+
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+.submenu {
+  min-width: 250px;
+  border-radius: 0;
+}
+
+.submenu .dropdown-item {
+  padding: 12px 20px;
+  color: #555;
+  font-size: 13px;
+  white-space: normal;
+}
+
+.submenu .dropdown-item:hover {
+  background: #fcfaf5;
+  color: #c5a059;
+}
+
+.language-picker {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Section CTA - Fix lỗi nhảy footer */
+.cta-section {
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    position: relative;
+    clear: both; /* Ngắt các luồng float nếu có */
+}
+
+.bg-white-transparent {
+    background-color: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(5px); /* Hiệu ứng mờ nền trắng giống ảnh mẫu */
+}
+
+/* Buttons */
+.btn-gold {
+    background-color: var(--gold);
+    color: white !important;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: #b08d4a;
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+/* Footer Custom - Đảm bảo nằm dưới cùng */
+.main-footer {
+    width: 100%;
+    background-color: #f9f7f3;
+    position: relative;
+    z-index: 10; /* Nằm trên lớp nền bg-image */
+    border-top: 1px solid #e0e0e0;
+}
+
+.main-footer a {
+    transition: color 0.3s ease;
+}
+
+.main-footer a:hover {
+    color: var(--gold) !important;
+}
+
+/* Helper Classes */
+.letter-spacing-2 {
+    letter-spacing: 2px;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.transition-img {
+    transition: transform 0.6s ease;
+}
+
+.card:hover .transition-img {
+    transform: scale(1.05);
+}
+
+.language-picker {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .cta-section {
+        min-height: 400px !important;
+    }
+    .cta-box {
+        margin: 20px;
+        padding: 30px !important;
+    }
+} 
