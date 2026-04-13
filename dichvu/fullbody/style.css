@@ -31,16 +31,13 @@ body {
   transition: color 0.3s;
   padding: 0.5rem 1rem;
 }
-
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  z-index: 1030; 
+}
 .nav-links .nav-link:hover {
   color: #c5a059 !important;
-}
-
-@media (min-width: 992px) {
-  .dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
-  }
 }
 
 .submenu {
@@ -92,7 +89,6 @@ body {
     background-color: var(--gold);
 }
 
-/* Footer Links */
 footer a:hover {
     color: var(--gold) !important;
 }
@@ -101,27 +97,23 @@ footer a:hover {
     letter-spacing: 2px;
 }
 .text-gold {
-    color: #d1ab6e !important; /* Màu vàng nhạt giống trong ảnh */
+    color: #d1ab6e !important; 
 }
 
-/* Tiêu đề Serif nghệ thuật */
 .serif-font {
     font-family: 'Cormorant Garamond', serif;
 }
 
-/* Căn lề đều hai bên cho giống thiết kế */
 .text-justify {
     text-align: justify;
 }
 
-/* Tùy chỉnh kích thước chữ cho đoạn văn */
 .method-item p {
     font-weight: 300;
     letter-spacing: 0.3px;
     color: #555 !important;
 }
 
-/* Tùy chỉnh tiêu đề chính */
 .display-4 {
     font-size: 3.5rem;
     font-weight: 400;
@@ -132,4 +124,10 @@ footer a:hover {
     .display-4 {
         font-size: 2.5rem;
     }
+}
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
 }

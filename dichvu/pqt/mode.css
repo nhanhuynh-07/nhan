@@ -3,7 +3,7 @@
 }
 
 body {
-    padding-top: 90px;
+    padding-top: 5px;
     background-color: #f8f9fa;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: 'Mulish', sans-serif;
@@ -41,13 +41,6 @@ body {
 
     .nav-links .nav-link:hover {
     color: #c5a059 !important;
-    }
-
-    @media (min-width: 992px) {
-    .dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
-    }
     }
 
     .submenu {
@@ -125,4 +118,10 @@ body {
     background-color: #a38965;
     color: white;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+     @media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    }
     }

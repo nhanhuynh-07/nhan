@@ -29,16 +29,13 @@ body {
   transition: color 0.3s;
   padding: 0.5rem 1rem;
 }
-
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  z-index: 1030; 
+}
 .nav-links .nav-link:hover {
   color: #c5a059 !important;
-}
-
-@media (min-width: 992px) {
-  .dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
-  }
 }
 
 .submenu {
@@ -99,7 +96,6 @@ body {
     background-color: var(--gold);
 }
 
-/* Utilities */
 .letter-spacing-2 {
     letter-spacing: 2px;
 }
@@ -111,4 +107,10 @@ footer a:hover {
 .language-picker {
     cursor: pointer;
     font-size: 14px;
+}
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
 }

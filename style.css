@@ -43,12 +43,6 @@ body {
   color: #c5a059 !important;
 }
 
-@media (min-width: 992px) {
-  .dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
-  }
-}
 
 .submenu {
   min-width: 250px;
@@ -87,12 +81,11 @@ body {
 }
 
 .brightness-dark {
-    filter: brightness(0.6); /* Giảm độ sáng xuống 60% */
+    filter: brightness(0.6); 
 }
 
-/* Đảm bảo phần hero luôn có chiều cao tối thiểu để thấy video */
 .hero-section {
-    min-height: 100vh; /* Full màn hình */
+    min-height: 100vh; 
 }
 
 .backdrop-blur {
@@ -145,4 +138,11 @@ body {
     .hero-section {
         min-height: 80vh;
     }
+    
+}
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
 }
